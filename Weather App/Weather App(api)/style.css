@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Update background color to a dark shade */
+    color: #fff; /* Update text color to white */
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.city-name {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff; /* Update text color to white */
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.weather-details {
+    text-align: left;
+}
+
+.weather-description {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ccc; /* Update text color to a lighter shade of gray */
+}
+
+.temperature {
+    font-size: 48px;
+    color: #fff; /* Update text color to white */
+}

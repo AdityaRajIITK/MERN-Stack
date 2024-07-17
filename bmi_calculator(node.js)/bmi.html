@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+        body {
+        font-family: 'Roboto', Arial, sans-serif;
+        background-color: #121212;
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+    }
+    
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: #1f1f1f;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #262626;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        background-color: #00b894;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #00cec9;
+    }
+    
+    .error-message {
+        color: #ff7675;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .result {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    </style>
+    <title>BMI calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <form action="/bmicalculator" method="post">
+        <input type="text" name="weight" placeholder="weight">
+        <input type="text" name="height" placeholder="height">
+        <button type="submit">Calculate BMI</button>
+    </form>
+</body>
+</html>
